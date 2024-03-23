@@ -2,6 +2,8 @@
 title: A comparison of UUID and number ID
 description: "Pros and cons of UUIDs and number IDs, and their performance in databases. Uniqueness, security with UUIDs; compact storage and readability with regular IDs."
 createdAt: 2023-07-20T07:46:43+02:00
+nextTitle: A comprehensive comparison of ChatGPT 3.5 and ChatGPT 4
+nextUrl: chatgpt4
 prevTitle: "Upgrading PHP 7.4 to 8.2: Navigating common code problems"
 prevUrl: php-upgrade
 tags: tutorials, webdev, uuid, database

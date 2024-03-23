@@ -3,7 +3,7 @@ title: What is happening in my life right now?
 description: Welcome to getting to know more about me. This page contains a comprehensive list of everything that is currently important to me in my professional and personal life.
 image: timoanttila
 createdAt: 2015-01-01T00:00:00+02:00
-updatedAt: 2024-01-25T12:00:00+03:00
+updatedAt: 2024-03-23T12:17:40+02:00
 ---
 
 ## Nationality:
@@ -17,9 +17,9 @@ Eurajoki, Finland
 
 ## Professional title:
 
-Entrepreneur  
 Full-Stack Web Developer  
-Investor
+Entrepreneur  
+Investor / Day trader
 
 ## Professional life:
 
@@ -37,14 +37,15 @@ The emphasis is on simplicity, speed, usability, ease of updating, and delight. 
 - Volunteering as full-stack developer at [Nordic Waves Group](https://www.nordicwaves.org/).
 - Developing and running my own sports and e-commerce platforms / SaaS services.
 - Maintaining a small number of servers and being in charge of the security and backup of clients' websites.
+- Trying to learn how to trade forex and cryptos in the short term.
 
 ## Personal life:
 
 - Married to a Kenyan woman, and we spend the majority of the year living in Kenya.
 - [Studying religions](https://battleofgods.net/) and training to become a Catholic.
 - Fascinated by artificial intelligence, technological marvels, and human behavior.
-- Investing in stocks, mutual funds, and cryptocurrencies ([eToro](https://www.etoro.com/people/timoanttila/portfolio) / [Nordnet](https://www.nordnet.fi/foorumi/kayttaja/ed961715-ebf9-4f03-807f-2340d4c3314e)).
-- Watching too many movies and series ([Trakt](https://trakt.tv/users/timoanttila)).
+- Investing in stocks, mutual funds, and cryptocurrencies in the long term.
+- Watching too many movies and series.
 - Nature lover.
 
 ## Skills and expertise

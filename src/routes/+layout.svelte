@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { colorScheme, defaultImage, fontSize, meta, width } from '$lib/store'
+  import { colorScheme, defaultImage, fontSize, meta, siteUrl, width } from '$lib/store'
   import Header from '$lib/Header.svelte'
   import '$lib/app.css'
 </script>
@@ -12,11 +12,13 @@
     <meta property="og:title" content={$meta.title} />
     <meta name="description" property="og:description" content={$meta.description} />
     <meta name="canonical" property="og:url" content={$meta.canonical} />
-    <meta property="og:image" content={$meta.image ?? defaultImage} />
+    <meta property="og:image" content={`${siteUrl}images/${$meta.image}` ?? defaultImage} />
     <meta property="og:type" content={$meta.type ?? 'website'} />
     {#if $meta.created}
       <meta content={$meta.created} name="pubdate" property="og:pubdate" />
       <meta content={$meta.created} property="article:published_time" />
+    {/if}
+    {#if $meta.updated}
       <meta content={$meta.updated} name="revised" property="article:modified_time" />
     {/if}
     {#if $meta.ldjson}

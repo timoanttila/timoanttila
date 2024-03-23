@@ -28,30 +28,30 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^6.19.1",
-		"@typescript-eslint/parser": "^6.19.1",
-		"autoprefixer": "^10.4.17",
-		"cssnano": "^6.0.3",
+		"@typescript-eslint/eslint-plugin": "^7.3.1",
+		"@typescript-eslint/parser": "^7.3.1",
+		"autoprefixer": "^10.4.19",
+		"cssnano": "^6.1.1",
+		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
-		"eslint": "^8.56.0",
 		"mdsvex": "^0.11.0",
-		"postcss": "^8.4.33",
-		"prettier-plugin-svelte": "^3.1.2",
-		"prettier": "^3.2.4",
-		"svelte-check": "^3.6.3",
+		"postcss": "^8.4.38",
+		"prettier": "^3.2.5",
+		"prettier-plugin-svelte": "latest",
+		"svelte-check": "^3.6.8",
 		"tailwindcss": "^3.4.1",
 		"tslib": "^2.6.2",
-		"typescript": "^5.3.3"
+		"typescript": "^5.4.3"
 	},
 	"dependencies": {
 		"@iconify/svelte": "^3.1.6",
-		"@sveltejs/adapter-cloudflare": "^4.1.0",
-		"@sveltejs/kit": "^2.4.3",
-		"@sveltejs/vite-plugin-svelte": "^3.0.1",
+		"@sveltejs/adapter-cloudflare": "latest",
+		"@sveltejs/kit": "latest",
+		"@sveltejs/vite-plugin-svelte": "latest",
 		"dayjs": "^1.11.10",
-		"svelte": "^4.2.9",
-		"vite": "^5.0.12"
+		"svelte": "^4.2.12",
+		"vite": "^5.2.3"
 	},
 	"type": "module"
 }

@@ -22,7 +22,16 @@ export const siteTitle = 'Timo Anttila'
 export const siteUrl = 'https://timoanttila.com/'
 export const defaultImage = `${siteUrl}images/social-timoanttila.webp`
 export const defaultImageAlt = 'Web Developer Timo Anttila'
+export const cacheTime = {'cache-control': 'max-age=2629800, stale-while-revalidate=86400'}
 
-export const slugify = (value: string): string => {
-  return value.toLowerCase().replace(/[^a-z0-9-]/gi, '')
+/**
+ * Converts a string to a slug by removing non-alphanumeric characters.
+ * @param value The input string to be slugified.
+ * @returns The slugified string.
+ */
+export const slugify = (value: any): string => {
+  if (!value) return ''
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9.@-]/gi, '')
 }

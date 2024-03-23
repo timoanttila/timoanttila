@@ -13,8 +13,8 @@
 		@apply cursor-pointer;
 	}
 
-  article code,
-  article pre {
+  article p code,
+  article .code {
     background-color: var(--bg-200);
   }
 
@@ -27,12 +27,14 @@
     @apply mt-2;
   }
 
-  article pre {
-    padding: 1.5rem;
-    border: 1px solid var(--border);
-    border-top: 4px solid var(--border-top);
+  article .code {
     border-radius: 20px;
+    border-top: 4px solid var(--border-top);
     box-shadow: 0 0 4px 4px hsl(0 0% 0% / 4%);
+    margin: 1.5rem 0;
+    overflow: auto;
+    padding: 1.5rem;
+    white-space: nowrap;
   }
 
   body {
@@ -72,6 +74,18 @@
 
   main {
     color: var(--text);
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p+p {
+    margin-top: 15px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   ul {
