@@ -3,7 +3,7 @@ title: What is happening in my life right now?
 description: Welcome to getting to know more about me. This page contains a comprehensive list of everything that is currently important to me in my professional and personal life.
 image: timoanttila
 createdAt: 2015-01-01T00:00:00+02:00
-updatedAt: 2024-03-23T12:17:40+02:00
+updatedAt: 2024-04-04T00:11:07+02:00
 ---
 
 ## Nationality:
@@ -17,9 +17,9 @@ Eurajoki, Finland
 
 ## Professional title:
 
-Full-Stack Web Developer  
 Entrepreneur  
-Investor / Day trader
+Investor / Day trader  
+Full-Stack Web Developer
 
 ## Professional life:
 
@@ -37,7 +37,7 @@ The emphasis is on simplicity, speed, usability, ease of updating, and delight. 
 - Volunteering as full-stack developer at [Nordic Waves Group](https://www.nordicwaves.org/).
 - Developing and running my own sports and e-commerce platforms / SaaS services.
 - Maintaining a small number of servers and being in charge of the security and backup of clients' websites.
-- Trying to learn how to trade forex and cryptos in the short term.
+- Trying to learn how to trade forex, commondies and cryptos in the short term.
 
 ## Personal life:
 

@@ -22,7 +22,6 @@ export const siteTitle = 'Timo Anttila'
 export const siteUrl = 'https://timoanttila.com/'
 export const defaultImage = `${siteUrl}images/social-timoanttila.webp`
 export const defaultImageAlt = 'Web Developer Timo Anttila'
-export const cacheTime = {'cache-control': 'max-age=2629800, stale-while-revalidate=86400'}
 
 /**
  * Converts a string to a slug by removing non-alphanumeric characters.
