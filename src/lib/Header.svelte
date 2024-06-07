@@ -1,42 +1,42 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
-  import { colorScheme, fontSize } from '$lib/store'
+  import {colorScheme, fontSize} from '$lib/store'
 
   const menu = [
-    { name: 'Home', link: '/', icon: 'home', aria: 'A brief description of me.' },
+    {name: 'Home', link: '/', icon: 'home', aria: 'A brief description of me.'},
     {
       name: 'About',
       link: '/about',
       icon: 'account',
-      aria: 'What is happening in my life right now and what is important to me.',
+      aria: 'What is happening in my life right now and what is important to me.'
     },
     {
       name: 'Articles',
       link: '/blog',
       icon: 'post-outline',
-      aria: 'A collection of articles about web development, programming, and life.',
+      aria: 'A collection of articles about web development, programming, and life.'
     },
     {
       name: 'Web Developer',
-      link: '/websites',
+      link: 'https://tuspe.com/en/websites',
       icon: 'code-tags',
-      aria: 'Creating beautiful and responsive websites for small businesses.',
-    },
+      aria: 'Creating beautiful and responsive websites for small businesses.'
+    }
   ]
 
   const social = [
-    { name: 'Contact me on WhatsApp', link: 'https://wa.me/358453111786', icon: 'mdi:whatsapp' },
-    { name: 'Download CV', link: '/timoanttila-cv.pdf', icon: 'pepicons-pencil:cv' },
-    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/anttilatimo/', icon: 'mdi:linkedin' },
-    { name: 'Reddit', link: 'https://www.reddit.com/user/timoanttila', icon: 'mdi:reddit' },
-    { name: 'GitHub', link: 'https://github.com/timoanttila', icon: 'mdi:github' },
-    { name: 'Instagram', link: 'https://www.instagram.com/_timoanttila/', icon: 'mdi:instagram' },
+    {name: 'Contact me on WhatsApp', link: 'https://wa.me/358453111786', icon: 'mdi:whatsapp'},
+    {name: 'Download CV', link: '/timoanttila-cv.pdf', icon: 'pepicons-pencil:cv'},
+    {name: 'LinkedIn', link: 'https://www.linkedin.com/in/anttilatimo/', icon: 'mdi:linkedin'},
+    {name: 'Reddit', link: 'https://www.reddit.com/user/timoanttila', icon: 'mdi:reddit'},
+    {name: 'GitHub', link: 'https://github.com/timoanttila', icon: 'mdi:github'},
+    {name: 'Instagram', link: 'https://www.instagram.com/_timoanttila/', icon: 'mdi:instagram'}
   ]
 
   const colors = [
-    { name: 'violet', color: '422e43' },
-    { name: 'dark', color: '121212' },
-    { name: 'white', color: 'fff' },
+    {name: 'violet', color: '422e43'},
+    {name: 'dark', color: '121212'},
+    {name: 'white', color: 'fff'}
   ]
 
   let menuOpen = false,

@@ -8,9 +8,10 @@ Passionate about crafting intuitive user experiences that enhance people's lives
 
 - Frontend: Javascript, SvelteKit, React, Nuxt, Vue, TypeScript, JQuery, HTML, CSS
 - Backend: PHP, Symfony, Node.js, REST API, SaaS, Cloudflare Workers
+- Automatic testing: Playwright
 - SQL: MySQL / MariaDB, Cloudflare D1, Turso, PostgreSQL, SQLite
-- Tools: Visual Studio Code - Insider, Docker, Postman API Platform
-- Communication: Slack, Google Chat, Google Meets, Microsoft Teams, Discord
+- Tools: Visual Studio Code, Docker, Postman API Platform
+- Communication: Atlassian Jira, Slack, Google Chat, Google Meets, Microsoft Teams, Discord
 - Version control: GitHub, Gitlab, Bitbucket
 - User management: Own user management systems, ProcessWire, Amazon Cognito, Firebase Authentication
 - Email services: Amazon SES, Mailchimp, SendingBlue, Mailjet
