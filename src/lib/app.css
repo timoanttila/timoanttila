@@ -7,15 +7,10 @@
     color: var(--text-link);
   }
 
-	a,
-	button,
-	select {
-		@apply cursor-pointer;
-	}
-
-  article p code,
-  article .code {
-    background-color: var(--bg-200);
+  a,
+  button,
+  select {
+    @apply cursor-pointer;
   }
 
   article h2 {
@@ -27,18 +22,31 @@
     @apply mt-2;
   }
 
-  article .code {
+  article pre {
     border-radius: 20px;
     border-top: 4px solid var(--border-top);
     box-shadow: 0 0 4px 4px hsl(0 0% 0% / 4%);
     margin: 1.5rem 0;
     overflow: auto;
     padding: 1.5rem;
-    white-space: nowrap;
+  }
+
+  article pre,
+  article p code {
+    background-color: var(--bg-300);
+  }
+
+  article p code {
+    padding: 0 0.25rem;
   }
 
   body {
-    font: 400 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Verdana, sans-serif;
+    font:
+      400 18px -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Verdana,
+      sans-serif;
     text-rendering: optimizeLegibility;
     @apply m-0 leading-normal overflow-x-hidden w-screen;
   }
@@ -69,7 +77,7 @@
 
   h2,
   h3 {
-    color: var(--title)
+    color: var(--title);
   }
 
   main {
@@ -80,7 +88,7 @@
     margin-top: 0;
   }
 
-  p+p {
+  p + p {
     margin-top: 15px;
   }
 
@@ -94,8 +102,8 @@
 }
 
 @layer components {
-  #menu  a {
-  color: var(--text);
+  #menu a {
+    color: var(--text);
   }
 
   #menu a:hover {
@@ -193,13 +201,13 @@
     color: var(--text-title);
   }
 
-  @media screen and (min-width:600px) {
+  @media screen and (min-width: 600px) {
     .btn-icon-link:first-child {
       @apply mr-4;
     }
   }
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     .btn-icon-link {
       @apply grid w-full;
     }
@@ -259,14 +267,16 @@
 }
 
 * {
-	box-sizing: border-box
+  box-sizing: border-box;
 }
 
 @font-face {
   font-family: poppins;
-  src: local('Poppins Bold'), local('Poppins-Bold'),
-  url('/fonts/Poppins-Bold.woff2') format('woff2'),
-  url('/fonts/Poppins-Bold.woff') format('woff');
+  src:
+    local('Poppins Bold'),
+    local('Poppins-Bold'),
+    url('/fonts/Poppins-Bold.woff2') format('woff2'),
+    url('/fonts/Poppins-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

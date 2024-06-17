@@ -1,9 +1,11 @@
 ---
 title: A comprehensive comparison of ChatGPT 3.5 and ChatGPT 4
-description: "A thorough comparison of ChatGPT 3.5 and ChatGPT 4 capabilities, reasoning skills, and performance in diverse tasks."
+description: 'A thorough comparison of ChatGPT 3.5 and ChatGPT 4 capabilities, reasoning skills, and performance in diverse tasks.'
 createdAt: 2024-01-29T11:05:00+02:00
-prevTitle: "A comparison of UUID and number ID"
+prevTitle: 'A comparison of UUID and number ID'
 prevUrl: uuid
+nextTitle: 'Install Xfce4 to Hetzner Cloud Ubuntu server'
+nextUrl: install-xfce-to-hetzner-cloud
 tags: tutorials, ai, chatgpt
 ---
 
