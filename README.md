@@ -9,7 +9,7 @@ Passionate about crafting intuitive user experiences that enhance people's lives
 - Frontend: Javascript, SvelteKit, React, Nuxt, Vue, TypeScript, JQuery, HTML, CSS
 - Backend: PHP, Symfony, Node.js, REST API, SaaS, Cloudflare Workers
 - Automatic testing: Playwright
-- SQL: MySQL / MariaDB, Cloudflare D1, Turso, PostgreSQL, SQLite
+- SQL: MySQL / MariaDB, PostgreSQL, SQLite, Cloudflare D1, Turso, Supabase
 - Tools: Visual Studio Code, Docker, Postman API Platform
 - Communication: Atlassian Jira, Slack, Google Chat, Google Meets, Microsoft Teams, Discord
 - Version control: GitHub, Gitlab, Bitbucket
@@ -17,7 +17,6 @@ Passionate about crafting intuitive user experiences that enhance people's lives
 - Email services: Amazon SES, Mailchimp, SendingBlue, Mailjet
 - Server management: Debian, Ubuntu
 - Web services / proxies: NGINX, Apache2
-- CMS: ProcessWire, WordPress, Drupal
 - Domains: Cloudflare, Joker, Namecheap, Traficom
 
 ## Languages
