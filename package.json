@@ -30,28 +30,28 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
-    "autoprefixer": "^10.4.19",
-    "cssnano": "^7.0.2",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
     "eslint": "latest",
     "eslint-config-prettier": "latest",
     "eslint-plugin-svelte": "latest",
-    "mdsvex": "^0.11.2",
-    "postcss": "^8.4.38",
-    "prettier": "^3.3.2",
+    "mdsvex": "^0.12.3",
+    "postcss": "^8.4.45",
+    "prettier": "^3.3.3",
     "prettier-plugin-svelte": "latest",
-    "svelte-check": "^3.8.0",
-    "tailwindcss": "^3.4.4",
-    "tslib": "^2.6.3",
-    "typescript": "^5.4.5"
+    "svelte-check": "^4.0.1",
+    "tailwindcss": "^3.4.10",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@iconify/svelte": "^4.0.2",
     "@sveltejs/adapter-cloudflare": "latest",
     "@sveltejs/kit": "latest",
     "@sveltejs/vite-plugin-svelte": "latest",
-    "dayjs": "^1.11.11",
-    "svelte": "^4.2.18",
-    "vite": "^5.3.1"
+    "dayjs": "^1.11.13",
+    "svelte": "^4.2.19",
+    "vite": "^5.4.3"
   },
   "type": "module"
 }
