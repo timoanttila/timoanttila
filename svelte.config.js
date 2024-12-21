@@ -13,6 +13,7 @@ const config = {
   preprocess: [mdsvex(mdsvexOptions), vitePreprocess()],
   kit: {
     adapter: adapter({
+      edge: true,
       routes: {
         include: ['/*'],
         exclude: ['<all>']

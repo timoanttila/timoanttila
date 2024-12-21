@@ -3,7 +3,7 @@ title: What is happening in my life right now?
 description: Welcome to getting to know more about me. This page contains a comprehensive list of everything that is currently important to me in my professional and personal life.
 image: timoanttila
 createdAt: 2015-01-01T00:00:00+02:00
-updatedAt: 2024-10-20T17:30:30+03:00
+updatedAt: 2024-12-21T08:45:45+03:00
 ---
 
 ## Nationality
@@ -68,7 +68,7 @@ The emphasis is on simplicity, speed, usability, ease of updating, and delight. 
 ## Find me around the web
 
 - Work: [LinkedIn](https://www.linkedin.com/in/anttilatimo/), [GitHub](https://github.com/timoanttila), [Tuspe Design Oy](https://tuspe.com/)
-- Social: [Reddit](https://www.reddit.com/user/timoanttila), [Instagram](https://www.instagram.com/_timoanttila/)
+- Social: [Reddit](https://www.reddit.com/user/timoanttila), [Trakt](https://trakt.tv/users/timoanttila)
 - [Contact me on WhatsApp](https://wa.me/358453111786)
 
 ## Recomended books

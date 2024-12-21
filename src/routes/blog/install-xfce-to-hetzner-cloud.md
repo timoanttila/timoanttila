@@ -5,6 +5,8 @@ description: How to install Xfce4 on a Hetzner Cloud Ubuntu server to create a l
 tags: tutorials, xfce, rdp, ubuntu, servers, hetzner
 prevUrl: chatgpt4
 prevTitle: A comprehensive comparison of ChatGPT 3.5 and ChatGPT 4
+nextUrl: increase-php-upload-size
+nextTitle: Increase PHP upload file size
 ---
 
 [Xfce](https://xfce.org/) is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.

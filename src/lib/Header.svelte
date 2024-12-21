@@ -25,12 +25,11 @@
   ]
 
   const social = [
-    {name: 'Contact me on WhatsApp', link: 'https://wa.me/358453111786', icon: 'mdi:whatsapp'},
-    {name: 'Download CV', link: '/timoanttila-cv.pdf', icon: 'pepicons-pencil:cv'},
     {name: 'LinkedIn', link: 'https://www.linkedin.com/in/anttilatimo/', icon: 'mdi:linkedin'},
-    {name: 'Reddit', link: 'https://www.reddit.com/user/timoanttila', icon: 'mdi:reddit'},
     {name: 'GitHub', link: 'https://github.com/timoanttila', icon: 'mdi:github'},
-    {name: 'Instagram', link: 'https://www.instagram.com/_timoanttila/', icon: 'mdi:instagram'}
+    {name: 'Reddit', link: 'https://www.reddit.com/user/timoanttila', icon: 'mdi:reddit'},
+    {name: 'Contact me on WhatsApp', link: 'https://wa.me/358453111786', icon: 'mdi:whatsapp'},
+    {name: 'Download CV', link: '/timoanttila-cv.pdf', icon: 'pepicons-pencil:cv'}
   ]
 
   const colors = [
