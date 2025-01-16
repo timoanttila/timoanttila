@@ -91,4 +91,4 @@ $conn->close();
 
 ## Related Posts
 
-- [Configure SMTP on WordPress without using a plugin](/blog/wordpress-smtp/)
+- [Configure SMTP on WordPress without using a plugin](/blog/wordpress-smtp)

@@ -1,52 +1,50 @@
 <script lang="ts">
   import dayjs from 'dayjs'
-  import { defaultImage, meta, siteTitle, siteUrl, width } from '$lib/store'
-  export let data
+  import {defaultImage, meta, siteTitle, siteUrl, width} from '$lib/store'
+  let {data} = $props()
 
-  const canonical = `${siteUrl}about`
-
-  const ldjsonArticle = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: data.title,
-    image: defaultImage,
-    author: {
-      '@type': 'Person',
-      name: siteTitle,
-      url: siteUrl,
-    },
-    wordcount: 447,
-    url: canonical,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': canonical,
-    },
-    datePublished: data.createdAt,
-    dateCreated: data.createdAt,
-    dateModified: data.updatedAt,
-    description: data.description,
-  }
-
-  const ldjsonBreadcrumbs = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: siteUrl,
+  const canonical = `${siteUrl}about`,
+    ldjsonArticle = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: data.title,
+      image: defaultImage,
+      author: {
+        '@type': 'Person',
+        name: siteTitle,
+        url: siteUrl
       },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: data.title,
-        item: canonical,
+      wordcount: 447,
+      url: canonical,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': canonical
       },
-    ],
-  }
-
-  const ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`
+      datePublished: data.createdAt,
+      dateCreated: data.createdAt,
+      dateModified: data.updatedAt,
+      description: data.description
+    },
+    ldjsonBreadcrumbs = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: siteUrl
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: data.title,
+          item: canonical
+        }
+      ]
+    },
+    ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`,
+    imageAlt = 'Timo & Rosemary - Together forever'
 
   $meta = {
     canonical,
@@ -57,10 +55,10 @@
     metaTitle: `${siteTitle} | ${data.title}`,
     title: data.title,
     type: 'article',
-    updated: data.updatedAt,
+    updated: data.updatedAt
   }
 
-  const imageAlt = 'Timo & Rosemary - Together forever'
+  const Component = $derived(data.content)
 </script>
 
 <div class="h-screen lg:gap-10 lg:grid lg:grid-cols-5 lg:items-center mx-auto overflow-hidden">
@@ -80,7 +78,9 @@
       <p class="m-0 text-2xl">{data.description}</p>
       <p>Updated: <time datetime={data.updatedAt}>{dayjs(data.updatedAt).format('MMMM D, YYYY')}</time></p>
       <div class="content leading-normal">
-        <svelte:component this={data.content} />
+        {#if data.content}
+          <Component />
+        {/if}
       </div>
     </article>
   </div>

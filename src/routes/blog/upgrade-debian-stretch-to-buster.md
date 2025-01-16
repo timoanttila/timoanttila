@@ -21,7 +21,7 @@ This guide will show you how to upgrade from Debian 9 Stretch to Debian 10 Buste
 
 **Backup is strongly advised, preferably from the entire system, but at the very least from databases and important files. Important system files and directories may be modified or deleted as a result of the version upgrade.**
 
-[Rsync](/blog/rsync/) is an excellent backup tool.
+[Rsync](/blog/rsync) is an excellent backup tool.
 
 ## Update Package Manager and Repositories
 

@@ -38,7 +38,7 @@ To install these updates, simply press Enter if Y is already selected, or Y and 
 
 It is important to note that the `apt upgrade` command will only install updates for packages that are currently installed. If you want to install new packages, type `apt install` followed by the name of the package(s) you want to install.
 
-I like to keep security updates active automatically on my server. You can read more about automatic security updates [here](/ubuntu-server-automatic-security-updated/).
+I like to keep security updates active automatically on my server. You can read more about automatic security updates [here](/blog/ubuntu-server-automatic-security-updated).
 
 ## Updating single package on Ubuntu Server
 
@@ -74,7 +74,7 @@ Keeping your Ubuntu server packages updated is crucial for maintaining the secur
 
 ## Related Posts
 
-- [Secure your Ubuntu server with ease: automate security package Updates](/blog/ubuntu-server-automatic-security-updated/)
-- [Linux server journal size management](/blog/linux-journal-files/)
-- [Ubuntu server log file size management](/blog/linux-log-rotation/)
-- [Remove unnecessary PHP sessions files on Debian](/blog/setup-crontab-to-remove-php-session-files/)
+- [Secure your Ubuntu server with ease: automate security package Updates](/blog/ubuntu-server-automatic-security-updated)
+- [Linux server journal size management](/blog/linux-journal-files)
+- [Ubuntu server log file size management](/blog/linux-log-rotation)
+- [Remove unnecessary PHP sessions files on Debian](/blog/setup-crontab-to-remove-php-session-files)

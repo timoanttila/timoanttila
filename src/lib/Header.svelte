@@ -38,8 +38,8 @@
     {name: 'white', color: 'fff'}
   ]
 
-  let menuOpen = false,
-    accessibilityOpen = false
+  let accessibilityOpen = $state(false),
+    menuOpen = $state(false)
 
   const changeFontSize = (value: number = 18) => {
     if (value > 28) {
@@ -57,7 +57,7 @@
     <ul class="m-0 p-0 w-full">
       {#each menu as item}
         <li class="block">
-          <a on:click={() => (menuOpen = false)} class="block no-underline p-6 text-menu uppercase" href={item.link} aria-label={item.aria}>
+          <a onclick={() => (menuOpen = false)} class="block no-underline p-6 text-menu uppercase" href={item.link} aria-label={item.aria}>
             {item.name}
           </a>
         </li>
@@ -67,25 +67,25 @@
 
   <div id="buttons" class="absolute bg-sidebar h-screen right-0 top-0 w-12">
     <div class="mb-6 w-full">
-      <button on:click={() => (menuOpen = !menuOpen)} class="btn-square" aria-label="Open / close the main navigation" aria-controls="menu" aria-expanded={menuOpen} aria-haspopup="true">
+      <button onclick={() => (menuOpen = !menuOpen)} class="btn-square" aria-label="Open / close the main navigation" aria-controls="menu" aria-expanded={menuOpen} aria-haspopup="true">
         <Icon icon="mdi:menu" aria-hidden="true" />
       </button>
 
-      <button on:click={() => (accessibilityOpen = !accessibilityOpen)} class="btn-square" aria-label="Accessibility options" aria-controls="accessibility" aria-expanded={accessibilityOpen} aria-haspopup="true">
+      <button onclick={() => (accessibilityOpen = !accessibilityOpen)} class="btn-square" aria-label="Accessibility options" aria-controls="accessibility" aria-expanded={accessibilityOpen} aria-haspopup="true">
         <Icon icon="mdi:human" aria-hidden="true" />
       </button>
 
       <div id="accessibility" class:hidden={!accessibilityOpen} class="absolute bg-sidebar p-2 right-14 rounded-full top-10 w-16">
-        <button on:click={() => changeFontSize($fontSize + 1)} class="btn-square text-center" class:cursor-not-allowed={$fontSize >= 28} aria-label={`Increase the font size of the site. Current font size is ${$fontSize}px.`} disabled={$fontSize >= 28}>
+        <button onclick={() => changeFontSize($fontSize + 1)} class="btn-square text-center" class:cursor-not-allowed={$fontSize >= 28} aria-label={`Increase the font size of the site. Current font size is ${$fontSize}px.`} disabled={$fontSize >= 28}>
           <Icon icon="mdi:format-font-size-increase" />
         </button>
 
-        <button on:click={() => changeFontSize($fontSize - 1)} class="btn-square mb-4 text-center" class:cursor-not-allowed={$fontSize <= 14} aria-label={`Decrease the font size of the site. Current font size is ${$fontSize}px.`} disabled={$fontSize <= 14}>
+        <button onclick={() => changeFontSize($fontSize - 1)} class="btn-square mb-4 text-center" class:cursor-not-allowed={$fontSize <= 14} aria-label={`Decrease the font size of the site. Current font size is ${$fontSize}px.`} disabled={$fontSize <= 14}>
           <Icon icon="mdi:format-font-size-decrease" />
         </button>
 
         {#each colors as color}
-          <button on:click={() => colorScheme.set(color.name)} class="btn-square text-center" aria-label={`Change theme color to ${color.name}`}>
+          <button onclick={() => colorScheme.set(color.name)} class="btn-square text-center" aria-label={`Change theme color to ${color.name}`}>
             <span class="border border-solid border-text border-opacity-80 h-8 mx-auto rounded-full w-8" style={`background-color:#${color.color}`}>
               <span class="hidden">Color scheme: {color.name}</span>
             </span>

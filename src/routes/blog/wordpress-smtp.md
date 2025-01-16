@@ -53,5 +53,5 @@ Thanks for reading!
 
 ## Related Posts
 
-- [PHP mail function test](/blog/php-mail-test/)
-- [Contact form](/blog/contact-form/)
+- [PHP mail function test](/blog/php-mail-test)
+- [Contact form](/blog/contact-form)

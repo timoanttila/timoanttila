@@ -59,7 +59,7 @@ It is important to note that automatic updates may not always be desirable in ce
 
 ## Related articles
 
-- [Ubuntu server package updates](/blog/ubuntu-server-update/)
-- [Linux server journal size management](/blog/linux-journal-files/)
-- [Ubuntu server log file size management](/blog/linux-log-rotation/)
-- [Remove unnecessary PHP sessions files on Debian](/blog/setup-crontab-to-remove-php-session-files/)
+- [Ubuntu server package updates](/blog/ubuntu-server-update)
+- [Linux server journal size management](/blog/linux-journal-files)
+- [Ubuntu server log file size management](/blog/linux-log-rotation)
+- [Remove unnecessary PHP sessions files on Debian](/blog/setup-crontab-to-remove-php-session-files)

@@ -1,72 +1,75 @@
 <script lang="ts">
   import dayjs from 'dayjs'
   import Icon from '@iconify/svelte'
-  import { defaultImage, meta, siteUrl, siteTitle } from '$lib/store'
+  import {defaultImage, meta, siteUrl, siteTitle} from '$lib/store'
 
-  export let data
+  let {data} = $props()
 
-  const canonicalBlog = `${siteUrl}blog`
-  const canonical = `${canonicalBlog}/${data.slug}`
+  $effect(() => {
+    const canonicalBlog = `${siteUrl}blog`
+    const canonical = `${canonicalBlog}/${data.slug}`
 
-  const ldjsonArticle = {
-    '@context': 'https://schema.org',
-    '@type': 'TechArticle',
-    headline: data.title,
-    image: defaultImage,
-    author: {
-      '@type': 'Person',
-      name: siteTitle,
-      url: siteUrl,
-    },
-    url: canonical,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': canonical,
-    },
-    datePublished: data.createdAt,
-    dateCreated: data.createdAt,
-    dateModified: data.updatedAt,
-    description: data.description,
-  }
-
-  const ldjsonBreadcrumbs = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: siteUrl,
+    const ldjsonArticle = {
+      '@context': 'https://schema.org',
+      '@type': 'TechArticle',
+      headline: data.title,
+      image: defaultImage,
+      author: {
+        '@type': 'Person',
+        name: siteTitle,
+        url: siteUrl
       },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Tutorials',
-        item: canonicalBlog,
+      url: canonical,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': canonical
       },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: data.title,
-        item: canonical,
-      },
-    ],
-  }
+      datePublished: data.createdAt,
+      dateCreated: data.createdAt,
+      dateModified: data.updatedAt,
+      description: data.description
+    }
 
-  const ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`
+    const ldjsonBreadcrumbs = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: siteUrl
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Tutorials',
+          item: canonicalBlog
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: data.title,
+          item: canonical
+        }
+      ]
+    }
 
-  $meta = {
-    canonical,
-    created: data.createdAt,
-    description: data.description,
-    image: defaultImage,
-    ldjson,
-    metaTitle: `${data.title} | ${siteTitle}`,
-    title: data.title,
-    type: 'article',
-    updated: data.updatedAt,
-  }
+    const ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`
+
+    $meta = {
+      canonical,
+      created: data.createdAt,
+      description: data.description,
+      image: defaultImage,
+      ldjson,
+      metaTitle: `${data.title} | ${siteTitle}`,
+      title: data.title,
+      type: 'article',
+      updated: data.updatedAt
+    }
+  })
+  const Component = $derived(data.content)
 </script>
 
 <div class="grid justify-end">
@@ -100,7 +103,7 @@
     <p>{dayjs(data.createdAt).format('MMMM D, YYYY')}</p>
   </div>
 
-  <svelte:component this={data.content} />
+  <Component />
 </article>
 
 <style scoped>

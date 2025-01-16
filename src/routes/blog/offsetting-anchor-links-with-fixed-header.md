@@ -39,4 +39,4 @@ Just in case, because of cross-browser compliance I prefer a solution that does 
 }
 ```
 
-You should also use "[Animated smooth scrolling effect for one-page website](/blog/animated-smooth-scrolling-effect/)" with anchor links.
+You should also use "[Animated smooth scrolling effect for one-page website](/blog/animated-smooth-scrolling-effect)" with anchor links.

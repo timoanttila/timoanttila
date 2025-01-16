@@ -109,4 +109,4 @@ Changing an HTML class with vanilla JavaScript based on vertical scroll can be a
 
 ## Related Articles
 
-- [Add or remove class with JQuery based on vertical scroll](/blog/add-or-remove-class-with-jquery-based-on-vertical-scroll/)
+- [Add or remove class with JQuery based on vertical scroll](/blog/add-or-remove-class-with-jquery-based-on-vertical-scroll)

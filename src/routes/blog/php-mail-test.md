@@ -36,4 +36,4 @@ If you have the file publicly accessible on your website, remember to delete it 
 
 ## Related Posts
 
-- [Configure SMTP on WordPress without using a plugin](/blog/wordpress-smtp/)
+- [Configure SMTP on WordPress without using a plugin](/blog/wordpress-smtp)

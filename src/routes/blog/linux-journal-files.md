@@ -48,9 +48,9 @@ man journalctl
 
 ## Related Posts
 
-- [Ubuntu server log size management](/blog/linux-log-rotation/)
-- [Remove unnecessary PHP sessions files on Debian](/blog/setup-crontab-to-remove-php-session-files/)
-- [Ubuntu server package updates](/blog/ubuntu-server-update/)
-- [Secure your Ubuntu server with ease: automate security package Updates](/blog/ubuntu-server-automatic-security-updated/)
-- [Backup your data automatically on Linux](/blog/backup-your-data-automatically-on-linux/)
-- [Utilize rsync to backup or sync data on Linux](/blog/rsync/)
+- [Ubuntu server log size management](/blog/linux-log-rotation)
+- [Remove unnecessary PHP sessions files on Debian](/blog/setup-crontab-to-remove-php-session-files)
+- [Ubuntu server package updates](/blog/ubuntu-server-update)
+- [Secure your Ubuntu server with ease: automate security package Updates](/blog/ubuntu-server-automatic-security-updated)
+- [Backup your data automatically on Linux](/blog/backup-your-data-automatically-on-linux)
+- [Utilize rsync to backup or sync data on Linux](/blog/rsync)

@@ -42,4 +42,4 @@ So simple, yet so effective. :)
 
 ## Related Articles
 
-- [Add or remove HTML class with vanilla JavaScript based on vertical scroll](/blog/change-class-with-javascript-based-on-vertical-scroll/)
+- [Add or remove HTML class with vanilla JavaScript based on vertical scroll](/blog/change-class-with-javascript-based-on-vertical-scroll)
