@@ -1,6 +1,6 @@
 <script lang="ts">
   import dayjs from 'dayjs'
-  import {defaultImage, meta, siteTitle, siteUrl, width} from '$lib/store'
+  import {defaultImage, metaData, siteTitle, siteUrl, width} from '$lib/store'
   let {data} = $props()
 
   const canonical = `${siteUrl}about`,
@@ -46,7 +46,7 @@
     ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`,
     imageAlt = 'Timo & Rosemary - Together forever'
 
-  $meta = {
+  $metaData = {
     canonical,
     created: data.createdAt,
     description: data.description,

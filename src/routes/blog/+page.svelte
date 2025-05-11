@@ -1,8 +1,8 @@
 <script lang="ts">
   import dayjs from 'dayjs'
-  import { meta, siteTitle, siteUrl, width } from '$lib/store'
+  import {metaData, siteTitle, siteUrl, width} from '$lib/store'
 
-  export let data: { articles: any[] }
+  export let data: {articles: any[]}
 
   const title = 'Tutorials'
   const description = 'Easy to read tutorials / guides for web developers and server admins. The articles are based on my own experiences and information that I have found on the internet.'
@@ -17,26 +17,26 @@
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: siteUrl,
+        item: siteUrl
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Tutorials',
-        item: canonical,
-      },
-    ],
+        item: canonical
+      }
+    ]
   }
 
   const ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`
 
-  $meta = {
+  $metaData = {
     canonical,
     description,
     image: `${siteUrl}images/social-laptop.webp`,
     ldjson,
     metaTitle: `${title} | ${siteTitle}`,
-    title,
+    title
   }
 </script>
 

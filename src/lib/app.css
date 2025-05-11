@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@theme {
+  --default-*: initial;
+  --font-*: initial;
+  --container-*: initial;
+  --tracking-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --blur-*: initial;
+  --breakpoint-xs: 414px;
+}
 
 @layer base {
   main a:not(.text-title):not(.btn-square):not(.btn-icon-link) {
@@ -14,7 +22,7 @@
   }
 
   article h2 {
-    font-size: clamp(1.8rem, 2.2rem, 6rem);
+    font-size: clamp(1.8rem, 2rem, 6rem);
     @apply mb-4 mt-10;
   }
 
@@ -42,11 +50,8 @@
 
   body {
     font:
-      400 18px -apple-system,
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Verdana,
-      sans-serif;
+      400 18px 'Open Sans',
+      Verdana;
     text-rendering: optimizeLegibility;
     @apply m-0 leading-normal overflow-x-hidden w-screen;
   }
@@ -64,8 +69,15 @@
     color: var(--text-title);
   }
 
-  h1 {
+  h1,
+  .font-poppins {
     font-family: poppins;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-poppins {
     @apply font-bold;
   }
 
@@ -88,8 +100,9 @@
     margin-top: 0;
   }
 
-  p + p {
-    margin-top: 15px;
+  p + p,
+  p + ul {
+    margin-top: 1.5rem;
   }
 
   p:last-child {
@@ -98,6 +111,7 @@
 
   ul {
     @apply pl-4;
+    list-style-type: circle;
   }
 }
 
@@ -268,18 +282,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: poppins;
-  src:
-    local('Poppins Bold'),
-    local('Poppins-Bold'),
-    url('/fonts/Poppins-Bold.woff2') format('woff2'),
-    url('/fonts/Poppins-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 @media screen and (min-width: 768px) {

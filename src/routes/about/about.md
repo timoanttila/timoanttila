@@ -3,7 +3,7 @@ title: What is happening in my life right now?
 description: Welcome to getting to know more about me. This page contains a comprehensive list of everything that is currently important to me in my professional and personal life.
 image: timoanttila
 createdAt: 2015-01-01T00:00:00+02:00
-updatedAt: 2024-12-21T08:45:45+03:00
+updatedAt: 2025-05-11T12:24:24+03:00
 ---
 
 ## Nationality
@@ -12,8 +12,8 @@ Finnish
 
 ## Locations
 
-Eurajoki, Finland  
-Homa Bay Town, Kenya
+Homa Bay Town, Kenya  
+Eurajoki, Finland
 
 ## Professional title
 
@@ -31,16 +31,17 @@ The emphasis is on simplicity, speed, usability, ease of updating, and delight. 
 
 - Full-stack developer and owner at [Tuspe Design Oy](https://tuspe.com/en).
 - Co-founder and part-time full-stack developer at [Ratsukko Solutions](https://ratsukko.com/).
-- Developing and running my own sports and e-commerce platforms / SaaS services.
-- Maintaining a small number of servers and being in charge of the security and backup of clients' websites.
-- Day trading gold, indices and forex.
+- Building and managing my own sports and e-commerce platforms, including SaaS services.
+- Responsible for maintaining servers and ensuring the security and backups of client websites.
+- Actively day trading gold, indices, and forex.
 
 ## Personal life
 
-- Married to a Kenyan woman.
+- Husband to amazing Kenyan woman.
+- Proud dad to a wonderful daughter.
 - Fascinated by artificial intelligence, technological marvels, and human behavior.
-- Investing in stocks, mutual funds, and cryptocurrencies in the long term.
-- Watching too many movies and series.
+- Long-term investor in stocks, mutual funds, and cryptocurrencies.
+- Movie and series enthusiast.
 - Nature lover.
 
 ## Languages

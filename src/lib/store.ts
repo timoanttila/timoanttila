@@ -15,7 +15,7 @@ interface Meta {
 
 export const colorScheme = writable<string>('dark')
 export const fontSize = writable<number>(18)
-export const meta = writable<Meta | null>(null)
+export const metaData = writable<Meta | null>(null)
 export const width = writable<number | null>(null)
 
 export const siteTitle = 'Timo Anttila'

@@ -1,7 +1,7 @@
 <script lang="ts">
   import dayjs from 'dayjs'
   import Icon from '@iconify/svelte'
-  import {defaultImage, meta, siteUrl, siteTitle} from '$lib/store'
+  import {defaultImage, metaData, siteUrl, siteTitle} from '$lib/store'
 
   let {data} = $props()
 
@@ -57,7 +57,7 @@
 
     const ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`
 
-    $meta = {
+    $metaData = {
       canonical,
       created: data.createdAt,
       description: data.description,

@@ -1,12 +1,12 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
-  import {meta, siteTitle, siteUrl, width} from '$lib/store'
+  import {metaData, siteTitle, siteUrl, width} from '$lib/store'
 
-  $meta = {
+  $metaData = {
+    canonical: siteUrl,
     description: 'Timo Anttila is a self-taught passionate developer, who loves solving problems and learning new ways to deliver solutions. Full Stack Web Developer and entrepreneur.',
-    title: siteTitle,
     metaTitle: `${siteTitle} | Change starts with a dream`,
-    canonical: siteUrl
+    title: siteTitle
   }
 </script>
 
@@ -29,7 +29,7 @@
   <div class="lg:col-span-3 lg:py-0 py-10">
     <div class="max-w-screen-sm mx-auto">
       <h1 class="front-title m-0 text-title">I'm Timo Anttila.</h1>
-      <h2 class="front-title mb-6 mt-0">Web Developer</h2>
+      <h2 class="front-title font-poppins mb-6 mt-0">Web Developer</h2>
 
       <div class="content leading-normal text-xl">
         <p>Full-stack web developer who is passionate about designing and developing intuitive user experiences that enhance people's lives. I find joy in crafting digital wonders from the depths of my imagination, relishing the art of problem-solving, and ever-in pursuit of ingenious routes to deliver solutions.</p>

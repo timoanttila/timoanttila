@@ -1,10 +1,10 @@
 <script lang="ts">
   import {page} from '$app/state'
-  import {meta, defaultImage, siteUrl} from '$lib/store'
+  import {defaultImage, metaData, siteUrl} from '$lib/store'
 
   const title = `Error ${page.status}`
 
-  $meta = {
+  $metaData = {
     canonical: siteUrl,
     description: `Default error page - status ${page.status}.`,
     image: defaultImage,

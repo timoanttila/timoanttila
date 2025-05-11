@@ -30,4 +30,3 @@ Passionate about crafting intuitive user experiences that enhance people's lives
 - [LinkedIn](https://www.linkedin.com/in/anttilatimo/)
 - [Reddit](https://www.reddit.com/user/timoanttila)
 - [Tuspe Design](https://tuspe.com/en)
-- [Contact me on WhatsApp](https://wa.me/358453111786)
