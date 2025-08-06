@@ -162,12 +162,7 @@
 
   .btn-square {
     color: var(--text);
-    @apply bg-transparent border-0 flex h-12 items-center p-0 w-full;
-  }
-
-  .btn-square span,
-  .btn-square svg {
-    @apply h-8 mx-auto w-8;
+    @apply bg-transparent border-0 flex h-12 items-center justify-center p-0 w-full;
   }
 
   .btn-icon-link {
@@ -282,6 +277,11 @@
 
 * {
   box-sizing: border-box;
+}
+
+header svg,
+#article-menu svg {
+  fill: var(--text);
 }
 
 @media screen and (min-width: 768px) {

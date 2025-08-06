@@ -3,8 +3,8 @@ title: Install Xfce4 to Hetzner Cloud Ubuntu server
 createdAt: 2024-06-17T13:19:19+03:00
 description: How to install Xfce4 on a Hetzner Cloud Ubuntu server to create a lightweight desktop environment for remote access.
 tags: tutorials, xfce, rdp, ubuntu, servers, hetzner
-prevUrl: chatgpt4
-prevTitle: A comprehensive comparison of ChatGPT 3.5 and ChatGPT 4
+prevTitle: 'A comparison of UUID and number ID'
+prevUrl: uuid
 nextUrl: increase-php-upload-size
 nextTitle: Increase PHP upload file size
 ---

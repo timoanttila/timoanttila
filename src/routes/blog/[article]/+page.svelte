@@ -1,7 +1,7 @@
 <script lang="ts">
   import dayjs from 'dayjs'
-  import Icon from '@iconify/svelte'
   import {defaultImage, metaData, siteUrl, siteTitle} from '$lib/store'
+  import Icon from '$lib/Icon.svelte'
 
   let {data} = $props()
 
@@ -72,24 +72,24 @@
   const Component = $derived(data.content)
 </script>
 
-<div class="grid justify-end">
-  <div class="grid grid-cols-3 right-16 top-0 w-32">
+<div id="article-menu" class="grid justify-end">
+  <div class="grid grid-cols-3 mr-4 mt-2 w-32">
     <div>
       {#if data.prevUrl}
         <a class="btn-square" href={data.prevUrl} aria-label={`Previous article: ${data.prevTitle}`}>
-          <Icon icon="mdi:chevron-left" />
+          <Icon icon="list-left" title="Previous article" />
         </a>
       {/if}
     </div>
     <div>
       <a aria-label="Stories about projects and life, easy-to-learn tutorials." class="btn-square" href="/blog">
-        <Icon icon="mdi:list-box-outline" />
+        <Icon icon="list" title="List of articles" />
       </a>
     </div>
     <div>
       {#if data.nextUrl}
         <a class="btn-square" href={data.nextUrl} aria-label={`Next article: ${data.nextTitle}`}>
-          <Icon icon="mdi:chevron-right" />
+          <Icon icon="list-right" title="Next article" />
         </a>
       {/if}
     </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte'
+  import Icon from '$lib/Icon.svelte'
   import {colorScheme, defaultImage, fontSize, metaData, siteUrl, width} from '$lib/store'
   import '$lib/app.css'
 
@@ -11,28 +11,29 @@
       name: 'About',
       link: '/about',
       icon: 'account',
+      size: 28,
       aria: 'What is happening in my life right now and what is important to me.'
     },
     {
       name: 'Articles',
       link: '/blog',
-      icon: 'post-outline',
+      icon: 'list',
       aria: 'A collection of articles about web development, programming, and life.'
     },
     {
       name: 'Web Developer',
       link: 'https://tuspe.com/en/websites',
-      icon: 'code-tags',
+      icon: 'company',
+      size: 34,
       aria: 'Creating beautiful and responsive websites for small businesses.'
     }
   ]
 
   const social = [
-    {name: 'LinkedIn', link: 'https://www.linkedin.com/in/anttilatimo/', icon: 'mdi:linkedin'},
-    {name: 'GitHub', link: 'https://github.com/timoanttila', icon: 'mdi:github'},
-    {name: 'Reddit', link: 'https://www.reddit.com/user/timoanttila', icon: 'mdi:reddit'},
-    {name: 'Contact me on WhatsApp', link: 'https://wa.me/358453111786', icon: 'mdi:whatsapp'},
-    {name: 'Download CV', link: '/timoanttila-cv.pdf', icon: 'pepicons-pencil:cv'}
+    {name: 'LinkedIn', link: 'https://www.linkedin.com/in/anttilatimo/', icon: 'linkedin'},
+    {name: 'GitHub', link: 'https://github.com/timoanttila', icon: 'github'},
+    {name: 'Contact me on WhatsApp', link: 'https://wa.me/358453111786', icon: 'whatsapp'},
+    {name: 'Download CV', link: '/timoanttila-cv.pdf', icon: 'cv', viewBox: '0 0 448 512'}
   ]
 
   const colors = [
@@ -102,20 +103,20 @@
     <div id="buttons" class="absolute bg-sidebar h-screen right-0 top-0 w-12">
       <div class="mb-6 w-full">
         <button onclick={() => (menuOpen = !menuOpen)} class="btn-square" aria-label="Open / close the main navigation" aria-controls="menu" aria-expanded={menuOpen} aria-haspopup="true">
-          <Icon icon="mdi:menu" aria-hidden="true" />
+          <Icon icon="menu" />
         </button>
 
         <button onclick={() => (accessibilityOpen = !accessibilityOpen)} class="btn-square" aria-label="Accessibility options" aria-controls="accessibility" aria-expanded={accessibilityOpen} aria-haspopup="true">
-          <Icon icon="mdi:human" aria-hidden="true" />
+          <Icon icon="human" size={32} />
         </button>
 
         <div id="accessibility" class:hidden={!accessibilityOpen} class="absolute bg-sidebar p-2 right-14 rounded-full top-10 w-16">
           <button onclick={() => changeFontSize($fontSize + 1)} class="btn-square text-center" class:cursor-not-allowed={$fontSize >= 28} aria-label={`Increase the font size of the site. Current font size is ${$fontSize}px.`} disabled={$fontSize >= 28}>
-            <Icon icon="mdi:format-font-size-increase" />
+            <Icon icon="font-up" />
           </button>
 
           <button onclick={() => changeFontSize($fontSize - 1)} class="btn-square mb-4 text-center" class:cursor-not-allowed={$fontSize <= 14} aria-label={`Decrease the font size of the site. Current font size is ${$fontSize}px.`} disabled={$fontSize <= 14}>
-            <Icon icon="mdi:format-font-size-decrease" />
+            <Icon icon="font-down" />
           </button>
 
           {#each colors as color}
@@ -133,7 +134,7 @@
           {#each menu as item}
             <li class="block">
               <a class="btn-square" href={item.link} aria-label={item.name}>
-                <Icon icon={`mdi:${item.icon}`} aria-hidden="true" />
+                <Icon icon={item.icon} size={item.size ?? 36} title={item.name} />
               </a>
             </li>
           {/each}
@@ -144,7 +145,7 @@
         {#each social as item}
           <li class="block">
             <a class="btn-square external" href={item.link} aria-label={item.name} target="_blank" rel="me">
-              <Icon icon={item.icon} aria-hidden="true" />
+              <Icon icon={item.icon} title={item.name} viewBox={item.viewBox ?? '0 0 24 24'} />
             </a>
           </li>
         {/each}

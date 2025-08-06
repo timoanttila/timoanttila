@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte'
   import {metaData, siteTitle, siteUrl, width} from '$lib/store'
+  import Icon from '$lib/Icon.svelte'
 
   $metaData = {
     canonical: siteUrl,
@@ -39,14 +39,14 @@
           <a href="/about" class="btn-icon-link" title="What is happening in my life right now?">
             <div class="content">
               <span>About me</span>
-              <Icon icon="mdi:arrow-right-thick" />
+              <Icon icon="arrow-right" title="About me" />
             </div>
           </a>
 
           <a href="/timoanttila-cv.pdf" class="btn-icon-link" title="CV of Full-Stack Web Developer Timo Anttila">
             <div class="content">
               <span>Download CV</span>
-              <Icon icon="mdi:pencil-ruler" />
+              <Icon icon="pencil-ruler" title="Download CV" />
             </div>
           </a>
         </div>

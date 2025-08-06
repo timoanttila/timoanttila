@@ -7,6 +7,7 @@ prevUrl: uuid
 nextTitle: 'Install Xfce4 to Hetzner Cloud Ubuntu server'
 nextUrl: install-xfce-to-hetzner-cloud
 tags: tutorials, ai, chatgpt
+noList: 1
 ---
 
 As an AI enthusiast, I'm always on the lookout for the latest advancements and improvements in AI technology. Today, I'm going to examine whether the paid version, ChatGPT 4, is worth the price compared to the free version, ChatGPT 3.5.

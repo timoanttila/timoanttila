@@ -3,8 +3,5 @@ import {defineConfig} from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [sveltekit(), tailwindcss()],
-  optimizeDeps: {
-    exclude: ['@iconify/svelte']
-  }
+  plugins: [sveltekit(), tailwindcss()]
 })

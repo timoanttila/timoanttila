@@ -12,9 +12,5 @@ export const load: PageLoad = async () => {
       return {...metadata, slug: path.slice(2, -3)}
     })
   )
-
-  // Sort the posts by createdAt in descending order (newest to oldest)
-  allPosts.sort((a, b) => dayjs(b.createdAt).unix() - dayjs(a.createdAt).unix())
-
-  return {articles: allPosts} // Corrected return statement
+  return {articles: allPosts.filter(post => !post.noList).sort((a, b) => dayjs(b.createdAt).unix() - dayjs(a.createdAt).unix())}
 }
