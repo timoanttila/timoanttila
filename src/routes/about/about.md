@@ -3,7 +3,7 @@ title: What is happening in my life right now?
 description: Welcome to getting to know more about me. This page contains a comprehensive list of everything that is currently important to me in my professional and personal life.
 image: timoanttila
 createdAt: 2015-01-01T00:00:00+02:00
-updatedAt: 2025-08-06T07:07:07+03:00
+updatedAt: 2026-01-12T22:34:07+03:00
 ---
 
 ## Nationality
@@ -47,8 +47,8 @@ The emphasis is on simplicity, speed, usability, ease of updating, and delight. 
 ## Skills and expertise
 
 - Frontend: Javascript, SvelteKit, React, Nuxt, Vue, TypeScript, JQuery, HTML, CSS
-- Backend: Node, PHP, Symfony, REST API, SaaS, Cloudflare Workers
-- Automatic testing: Playwright
+- Backend: Node, PHP, Laravel, Symfony, REST API, SaaS, Cloudflare Workers, PineScript
+- Automatic testing: PHPUnit, Playwright
 - SQL: MySQL / MariaDB, PostgreSQL, SQLite, Cloudflare D1, Turso, Supabase
 - Tools: Visual Studio Code, Docker, Postman API Platform
 - Communication: Atlassian Jira, Slack, Google Chat, Google Meets, Microsoft Teams, Discord

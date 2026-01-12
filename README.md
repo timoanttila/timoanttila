@@ -7,13 +7,13 @@ Passionate about crafting intuitive user experiences that enhance people's lives
 ## Skills and expertise
 
 - Frontend: Javascript, SvelteKit, React, Nuxt, Vue, TypeScript, JQuery, HTML, CSS
-- Backend: PHP, Symfony, Node.js, REST API, SaaS, Cloudflare Workers
-- Automatic testing: Playwright
+- Backend: PHP, Laravel, Symfony, Node.js, REST API, SaaS, Cloudflare Workers, PineScript
+- Automatic testing: PHPUnit, Playwright
 - SQL: MySQL / MariaDB, PostgreSQL, SQLite, Cloudflare D1, Turso, Supabase
 - Tools: Visual Studio Code, Docker, Postman API Platform
 - Communication: Atlassian Jira, Slack, Google Chat, Google Meets, Microsoft Teams, Discord
 - Version control: GitHub, Gitlab, Bitbucket
-- User management: Own user management systems, ProcessWire, Amazon Cognito, Firebase Authentication
+- User management: Laravel, ProcessWire, Amazon Cognito, Firebase Authentication
 - Email services: Amazon SES, Mailchimp, SendingBlue, Mailjet
 - Server management: Debian, Ubuntu
 - Web services / proxies: NGINX, Apache2
@@ -28,5 +28,4 @@ Passionate about crafting intuitive user experiences that enhance people's lives
 
 - [My personal website](https://timoanttila.com/)
 - [LinkedIn](https://www.linkedin.com/in/anttilatimo/)
-- [Reddit](https://www.reddit.com/user/timoanttila)
 - [Tuspe Design](https://tuspe.com/en)
