@@ -1,4 +1,5 @@
 <script lang="ts">
+  import {page} from '$app/state'
   import Icon from '$lib/Icon.svelte'
   import {colorScheme, defaultImage, fontSize, metaData, siteUrl, width} from '$lib/store'
   import '$lib/app.css'
@@ -19,6 +20,13 @@
       link: '/blog',
       icon: 'list',
       aria: 'A collection of articles about web development, programming, and life.'
+    },
+    {
+      name: 'Password Generator',
+      link: '/diceware',
+      icon: 'dice',
+      size: 34,
+      aria: 'Create memorable and secure passphrases.'
     },
     {
       name: 'Web Developer',
@@ -63,7 +71,7 @@
     <title>{$metaData.metaTitle ?? $metaData.title}</title>
     <meta property="og:title" content={$metaData.title} />
     <meta name="description" property="og:description" content={$metaData.description} />
-    <meta name="canonical" property="og:url" content={$metaData.canonical} />
+    <meta name="canonical" property="og:url" content={page.url.href} />
     <meta property="og:image" content={$metaData.image ? `${siteUrl}images/${$metaData.image}` : defaultImage} />
     <meta property="og:type" content={$metaData.type ?? 'website'} />
     {#if $metaData.created}

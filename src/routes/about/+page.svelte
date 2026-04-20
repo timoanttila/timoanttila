@@ -1,64 +1,67 @@
 <script lang="ts">
   import dayjs from 'dayjs'
   import {defaultImage, metaData, siteTitle, siteUrl, width} from '$lib/store'
+  import {onMount} from 'svelte'
+
   let {data} = $props()
 
-  const canonical = `${siteUrl}about`,
-    ldjsonArticle = {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: data.title,
-      image: defaultImage,
-      author: {
-        '@type': 'Person',
-        name: siteTitle,
-        url: siteUrl
-      },
-      wordcount: 447,
-      url: canonical,
-      mainEntityOfPage: {
-        '@type': 'WebPage',
-        '@id': canonical
-      },
-      datePublished: data.createdAt,
-      dateCreated: data.createdAt,
-      dateModified: data.updatedAt,
-      description: data.description
-    },
-    ldjsonBreadcrumbs = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Home',
-          item: siteUrl
+  const Component = $derived(data.content),
+    imageAlt = 'Rosemary & Timo - Together forever'
+
+  onMount(() => {
+    const canonical = `${siteUrl}about`,
+      ldjsonArticle = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: data.title,
+        image: defaultImage,
+        author: {
+          '@type': 'Person',
+          name: siteTitle,
+          url: siteUrl
         },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: data.title,
-          item: canonical
-        }
-      ]
-    },
-    ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`,
-    imageAlt = 'Timo & Rosemary - Together forever'
+        wordcount: 447,
+        url: canonical,
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': canonical
+        },
+        datePublished: data.createdAt,
+        dateCreated: data.createdAt,
+        dateModified: data.updatedAt,
+        description: data.description
+      },
+      ldjsonBreadcrumbs = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: siteUrl
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: data.title,
+            item: canonical
+          }
+        ]
+      },
+      ldjson = `<script type="application/ld+json">${JSON.stringify(ldjsonArticle)}${JSON.stringify(ldjsonBreadcrumbs)}${'<'}/script>`
 
-  $metaData = {
-    canonical,
-    created: data.createdAt,
-    description: data.description,
-    image: defaultImage,
-    ldjson,
-    metaTitle: `${siteTitle} | ${data.title}`,
-    title: data.title,
-    type: 'article',
-    updated: data.updatedAt
-  }
-
-  const Component = $derived(data.content)
+    $metaData = {
+      created: data.createdAt,
+      description: data.description,
+      image: defaultImage,
+      ldjson,
+      metaTitle: `${siteTitle} | ${data.title}`,
+      title: data.title,
+      type: 'article',
+      updated: data.updatedAt
+    }
+  })
 </script>
 
 <div class="h-screen lg:gap-10 lg:grid lg:grid-cols-5 lg:items-center mx-auto overflow-hidden">

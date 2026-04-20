@@ -5,7 +5,6 @@
   const title = `Error ${page.status}`
 
   $metaData = {
-    canonical: siteUrl,
     description: `Default error page - status ${page.status}.`,
     image: defaultImage,
     metaTitle: title,

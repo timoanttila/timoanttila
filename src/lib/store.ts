@@ -1,7 +1,6 @@
 import {writable} from 'svelte/store'
 
 interface Meta {
-  canonical: string
   created?: string
   description: string
   image?: string

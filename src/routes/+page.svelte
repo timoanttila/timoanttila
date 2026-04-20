@@ -1,9 +1,8 @@
 <script lang="ts">
-  import {metaData, siteTitle, siteUrl, width} from '$lib/store'
+  import {metaData, siteTitle, width} from '$lib/store'
   import Icon from '$lib/Icon.svelte'
 
   $metaData = {
-    canonical: siteUrl,
     description: 'Timo Anttila is a self-taught passionate developer, who loves solving problems and learning new ways to deliver solutions. Full Stack Web Developer and entrepreneur.',
     metaTitle: `${siteTitle} | Change starts with a dream`,
     title: siteTitle
@@ -19,7 +18,7 @@
   <div class="lg:col-span-2 overflow-hidden z-20">
     {#if $width}
       {#if $width >= 1024}
-        <img src="/images/timoanttila-homabay-23-672.webp" height="972" width="672" alt="Web developer Timo Anttila" class="block h-[972px] max-h-[90vh] max-w-full object-cover object-top rounded-2xl w-[672px]" decoding="async" />
+        <img src="/images/timoanttila-homabay-23-672.webp" height="972" width="672" alt="Web developer Timo Anttila" class="block h-243 max-h-[90vh] max-w-full object-cover object-top rounded-2xl w-168" decoding="async" />
       {:else}
         <img src="/images/timoanttila-homabay-23-250.webp" height="250" width="250" alt="Web developer Timo Anttila" class="block bg-sidebar h-auto max-w-full mx-auto p-2 rounded-full" decoding="async" />
       {/if}
