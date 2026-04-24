@@ -13,7 +13,7 @@
       }
     ],
     numberOfGroups = [4, 5, 6, 7, 8, 9, 10],
-    title = 'Diceware'
+    title = 'Diceware Password Generator'
 
   let groupNumber = $state(5),
     langIndex = $state(1),
@@ -45,7 +45,8 @@
     $metaData = {
       created: '2026-04-19T23:00:00+03:00',
       description: 'Diceware password generator using Svelte. Create secure, memorable passphrases from random wordlists with dice rolls. Works locally in browser for privacy.',
-      title
+      title,
+      updated: '2026-04-24T08:31:31+03:00'
     }
   })
 
